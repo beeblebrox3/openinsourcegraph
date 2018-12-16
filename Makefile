@@ -9,7 +9,7 @@ build: extension.zip
 clean:
 	rm -f extension.zip manifest.json
 
-clean-build: clean build manifest.json
+clean-build: clean manifest.json build
 
 manifest.json:
 	@sh generate-manifest.sh
